@@ -4,7 +4,7 @@ function submitForm(event) {
     var form = document.getElementById('contactForm');
     var formData = new FormData(form);
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://formspree.io/f/mnqebewr', true);
+    xhr.open('POST', 'https://formspree.io/f/myyrnpkl', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     successMessage.innerHTML = 'Form submitted successfully!';
     xhr.send(new URLSearchParams(formData));
