@@ -1414,3 +1414,32 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     justify-content: center;
   }
 }
+
+.why-us .card {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #F3F4FE;
+  margin: 15px;
+  border:none;
+}
+
+.why-us .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.why-us ul li {
+list-style: none;
+}
+
+.why-us .card ul {
+  padding-left: 20px;
+}
+
+.why-us .card ul li {
+  margin-bottom: 10px;
+}
+.why-us{
+
+}
