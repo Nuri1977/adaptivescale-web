@@ -365,26 +365,26 @@
         <div class="col-xl-5 col-lg-5">
           <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
             <h3 class="ud-contact-form-title">Send us a Message</h3>
-            <form id="contactForm" class="ud-contact-form" onsubmit="submitForm(event)">
+            <form id="form" class="ud-contact-form">
               <div class="ud-form-group">
                 <label for="fullName">Full Name*</label>
-                <input type="text" name="fullName" placeholder="First and Last Name" />
+                <input type="text" name="fullName" placeholder="First and Last Name" required />
               </div>
               <div class="ud-form-group">
                 <label for="email">Email*</label>
-                <input type="email" name="email" placeholder="example@yourmail.com" />
+                <input type="email" name="email" placeholder="example@yourmail.com" required />
               </div>
               <div class="ud-form-group">
                 <label for="phone">Phone*</label>
-                <input type="text" name="phone" placeholder="+123 456 789 1011" />
+                <input type="text" name="phone" placeholder="+123 456 789 1011" required />
               </div>
               <div class="ud-form-group">
                 <label for="message">Message*</label>
-                <textarea name="message" rows="1" placeholder="type your message here"></textarea>
+                <textarea name="message" rows="1" placeholder="type your message here" required></textarea>
               </div>
-              <div id="successMessage" class="ud-success-message"></div>
+              <div id="successMessage" class="ud-success-message my-2"></div>
               <div class="ud-form-group mb-0">
-                <button type="submit" class="ud-main-btn">
+                <button type="submit" id="submit" class="ud-main-btn">
                   Send Message
                 </button>
               </div>
