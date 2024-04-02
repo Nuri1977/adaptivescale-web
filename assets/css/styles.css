@@ -1088,10 +1088,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.034), 0 6px 20px 0 rgba(0, 0, 0, 0.062);
   margin-bottom: 20px; 
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 10px;
-  width: 300px;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1100,7 +1099,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   background-color: #F3F4FE;
 }
 .ui-card-sl:hover {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .ui-card-image img {
@@ -1110,7 +1109,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .ui-card-heading {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   background: #F3F4FE;
   padding: 10px 15px;
@@ -1119,17 +1118,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .ui-card-text {
   padding: 10px 15px;
   background: #F3F4FE;
-  font-size: 14px;
+  font-size: 15px;
   color: #636262;
 }
 
-@media (max-width: 990px) {
-  .ui-card-sl {
-    width: 230px;
-    height: 300px;
-   
-  }
-}
 
 /* Footer CSS  */
 
