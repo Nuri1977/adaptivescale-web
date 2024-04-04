@@ -1461,3 +1461,11 @@ list-style: none;
     transform: rotate(360deg);
   }
 }
+
+.ud-work h4 {
+  margin-top: 30px;
+}
+
+.ud-work ul {
+  padding-left: 20px;
+}
