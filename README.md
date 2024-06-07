@@ -1,2 +1,2 @@
 # adaptivescale-com
-Official AdaptiveScale website
+- Official AdaptiveScale website
