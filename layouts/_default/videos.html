@@ -1,0 +1,35 @@
+{{ define "body-class" }}template-videos{{ end }}
+{{ define "main" }}
+    <header>
+        {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
+        {{- $terms := $taxonomy.Pages -}}
+        {{ if $terms }}
+        <h2 class="section-title">{{ $taxonomy.Title }}</h2>
+        <div class="subsection-list">
+            <div class="article-list--tile">
+                {{ range $terms }}
+                    {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "video") }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </header>
+
+    {{ $videos := where .Site.RegularPages "Type" "video" }}
+    {{ $notHidden := where $videos "Params.hidden" "!=" true }}
+    {{ $filtered := ($notHidden.GroupByDate "2006") }}
+
+    {{ range $filtered }}
+    {{ $id := lower (replace .Key " " "-") }}
+    <div class="videos-group" id="{{ $id }}">
+        <h2 class="videos-date section-title"><a href="{{ $.RelPermalink }}#{{ $id }}">{{ .Key }}</a></h2>
+        <div class="article-list--compact">
+            {{ range .Pages }}
+                {{ partial "article-list/compact" . }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}

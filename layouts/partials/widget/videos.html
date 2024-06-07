@@ -1,0 +1,33 @@
+{{- $context := .Context -}}
+{{- $limit := default 5 .Params.limit -}}
+{{- $videosPage := .Site.GetPage "/videos" -}}
+{{- if $videosPage -}}
+    <section class="widget videos">
+        <div class="widget-icon">
+            {{ partial "helper/icon" "infinity" }}
+        </div>
+        <h2 class="widget-title section-title">{{ T "widget.videos.title" }}</h2>
+
+        {{ $videos := where .Site.RegularPages "Type" "video" }}
+        {{ $notHidden := where $videos "Params.hidden" "!=" true }}
+        {{ $videos := $notHidden.GroupByDate "2006" }}
+        
+        <div class="widget-video--list">
+            {{ range $index, $item := first (add $limit 1) ($videos) }}
+                {{- $id := lower (replace $item.Key " " "-") -}}
+                <div class="videos-year">
+                    <a href="{{ $videosPage.RelPermalink }}#{{ $id }}">
+                        {{ if eq $index $limit }}
+                            <span class="year">{{ T "widget.videos.more" }}</span>
+                        {{ else }}
+                            <span class="year">{{ .Key }}</span>
+                            <span class="count">{{ len $item.Pages }}</span>
+                        {{ end }}
+                    </a> 
+                </div>
+            {{ end }}
+        </div>
+    </section>
+{{- else -}}
+    {{- warnf "videos page not found. Create a page with layout: videos." -}}
+{{- end -}}
