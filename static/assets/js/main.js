@@ -81,6 +81,13 @@ document.getElementById("productsDropdown").addEventListener("mouseleave", funct
   this.querySelector(".products-dropdown-menu").classList.remove("show");
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Check localStorage for the notification closed state
+  if (localStorage.getItem('notificationClosed') !== 'true') {
+    document.getElementById('notification-bar').style.display = 'flex';
+  }
+});
+
 
 
   // ====== scroll top js
