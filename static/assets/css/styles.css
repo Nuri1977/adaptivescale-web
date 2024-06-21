@@ -1473,3 +1473,32 @@ list-style: none;
   background-color: #F3F4FE;
   padding: 30px;
 }
+.notification-bar {
+  background-color: #BED4FF;
+  color: var(--primary-color);
+  padding: 5px 15px;
+  top: 0;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification-bar p {
+  margin: 0;
+  font-size: 16px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.close-button {
+  color: #2a3a4d;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  right: 15px;
+}
+
