@@ -32,7 +32,7 @@ The goal here is not so much to focus particularly on data loading techniques, a
 
 In the following screencast I demonstrate the data loading process I went though and some minor tweaks I made along the way, like renaming the DB to demo, commenting out the trigger parts, and fixing the storage engine to InnoDB. I applied the same techniques to the Posgres DB as well.
 
-![Data loading procedure](photo-2.gif)
+![Data loading procedure](https://i.ibb.co/tJpkRB9/photo-2.gif)
 
 Create Pipeline
 ---------------

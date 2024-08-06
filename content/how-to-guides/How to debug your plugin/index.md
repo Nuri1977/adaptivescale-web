@@ -68,7 +68,7 @@ This indicates that the debugger agent service has been started on port 5005. We
 
 At this point we won’t be making any changes to the source code.
 
-![](photo-7.gif)
+![](https://i.ibb.co/QfjswhV/photo-7.gif)
 
 
 **Start Debugger in IntelliJ**
@@ -80,7 +80,7 @@ Open up the source file for the ExampleTransformPlugin class, navigate to the tr
 
 Switch over to the pipeline studio, put in preview mode and run it. Switch back to the IntelliJ screen and whooila, your breakpoint has been reached and you can now inspect the data that is coming from the Wrangler stage. Clicking on the **fields** variable will show you that you have an object with 12 elements. You can now inspect each of the elements within this object and see what results it produces. As you step over each iteration of the loop you will see the records being submitter in sequence through the pipeline.
 
-![](photo-8.gif)
+![](https://i.ibb.co/z2Q8GFy/photo-8.gif)
 
 
 While you’re in debug mode the preview for the pipeline will continue to run until you stop the debugger or the pipeline preview.
