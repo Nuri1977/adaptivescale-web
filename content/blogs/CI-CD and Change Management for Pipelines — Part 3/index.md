@@ -174,7 +174,7 @@ Finally, if you have multiple pipelines to test it would be far more practical t
 
 In the Titanic-02 pipeline I used macros, so I can pass those parameters in as a JSON object to the API call. Once again, if we were to write a program or a script to loop through all the pipeline tests we would extract the macro and preference values from a file and pass them in at runtime.
 
-![](photo-13.gif)
+![](https://i.ibb.co/9gGLVh6/photo-13.gif)
 
 As you can see, when we invoke the pipeline execution via the REST API the UI swings into action and gives visual feedback of the activity taking place. And of course, we can see the results of our test in the output destination specified by the macro variable.
 
