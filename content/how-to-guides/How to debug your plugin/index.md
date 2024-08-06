@@ -58,7 +58,7 @@ The full comand would thus be:
 
 Optionally, if you want to use a port other than the default port 5050, simply add the port number after the enable debug command.
 
-![](photo-6.gif)
+![](https://i.ibb.co/LzqCZN0/photo-6.gif)
 
 Take note of the following line in the output.
 

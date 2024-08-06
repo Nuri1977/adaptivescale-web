@@ -151,7 +151,7 @@ Now’s a good time to build the project once again to make sure that nothing is
 
 > **mvn clean package**
 
-![](photo-11.gif)
+![](https://i.ibb.co/gSZxJ3L/photo-11.gif)
 
 When the build runs, it will scan the **widgets** and **docs** directories in order to build an appropriately formatted **.json** file under the \`**target\`** directory. This file is deployed along with your **.jar** file to add your plugin to CDAP.
 
@@ -163,7 +163,7 @@ We can see Maven creates a target directory where we can find the plugin artifac
 
 We can now deploy the plugin to see what it looks like in CDAP Studio. Launch CDAP studio and click on the green plus icon and upload the plugin as illustrated.
 
-![](photo-12.gif)
+![](https://i.ibb.co/7Q2CK59/photo-12.gif)
 
 Time to Code
 ------------
