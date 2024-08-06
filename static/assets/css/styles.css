@@ -6,7 +6,7 @@
   --heading-color: #212b36;
   --primary-color: #212B36;
   --white: #ffffff;
-  --carousel-width: 80vw;
+  --carousel-width: 100vw;
   --carousel-height: 20vh;
   --carousel-elements-displayed: 5;
   --carousel-element-width: calc(var(--carousel-width) / var(--carousel-elements-displayed));
@@ -766,6 +766,16 @@ h6 {
 }
 
 /* ===== Hero CSS ===== */
+.ud-new-hero {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-color: #F3F4FE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .ud-hero-main {
   padding-top: 220px;
   padding-bottom: 120px;
@@ -805,6 +815,41 @@ h6 {
   }
 }
 
+.hero-wraper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  color: var(--primary-color);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-descrition{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+
+.hero-buttons {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .ud-hero-title {
   max-width: 620px;
   margin-bottom: 70px;
@@ -840,6 +885,22 @@ h6 {
   .ud-section-title p {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .hero-descrition {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1060,8 +1121,8 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   top: 0;
   bottom: 0;
   width: 80px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.733), white),
-    linear-gradient(to left, rgba(255, 255, 255, 0.753), white);
+  background: linear-gradient(to right, #F3F4FE, #F3F4FE),
+    linear-gradient(to left, #F3F4FE, #F3F4FE);
   filter: blur(10px);
   z-index: 1;
 }
