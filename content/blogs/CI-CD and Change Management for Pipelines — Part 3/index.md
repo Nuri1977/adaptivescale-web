@@ -57,7 +57,7 @@ Clone Test Branch
 
 With the development branch merged into test, I’m now ready to clone the test branch and deploy my pipelines to the TEST environment. I’m specifying that I want to clone the test branch with the “-b test” parameter. Once the repo is cloned I can navigate into the pipelines folder and see the pipelines available for testing. My shell also provides a visual cue as to which branch I’m rooted in.
 
-![](photo-7.gif)
+![](https://i.ibb.co/J7sWmQr/photo-7.gif)
 
 Deploy Pipeline
 ---------------
@@ -76,7 +76,7 @@ If we need to loop through all the pipelines that need to be deployed then we ca
 
 To illustrate, in the example below I deploy the pipeline to a namespace called BAR.
 
-![](photo-8.gif)
+![](https://i.ibb.co/T4TLDTk/photo-8.gif)
 
 Deployment Gotchas
 ------------------
@@ -94,7 +94,7 @@ A CDF/CDAP instance can have any number of namespaces and it’s probably a good
 
 **CLI:**
 
-![](photo-9.gif)
+![](https://i.ibb.co/WtgHHgR/photo-9.gif)
 
 
 **REST:**
@@ -127,7 +127,7 @@ Here’s how to retrieve preferences for a namespace via REST:
 
 Probably the biggest gotcha is the absence of a plugin in the target environment when you deploy a pipeline. Unlike the convenience of the UI, the REST API does not provide a single interface for handling all the plugin related issues you may encounter with your pipelines.
 
-![](photo-10.gif)
+![](https://i.ibb.co/NKNZZpm/photo-10.gif)
 
 It is up to you to check whether a plugin exists on the target system and if it is at the correct version given your pipeline’s generation and the version of CDF/CDAP you are deploying to. Therefore, your plugin deployment utility has to perform all of the validation tasks in order for the pipeline to work properly on a target environment.
 

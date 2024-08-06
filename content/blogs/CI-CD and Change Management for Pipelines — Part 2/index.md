@@ -62,7 +62,7 @@ You can start off by creating a new fork of the GitHub repo I set up for this pr
 
 This will create a local folder named **cdap-pipelines** containing the contents of the git repo.
 
-![](photo-4.gif)
+![](https://i.ibb.co/HCxrfbj/photo-4.gif)
 
 I created another user in github and forked the [https://github.com/vhajdari/cdap-pipelines](https://github.com/vhajdari/cdap-pipelines) repo into the new account. Keep in mind that you will need to create your own repo in order to check in new files.
 
@@ -109,7 +109,7 @@ This API returns the same JSON that we saw in the UI, and you can use the output
 
 Here’s the export script in action:
 
-![](photo-8.gif)
+![](https://i.ibb.co/h7x7XGg/photo-8.gif)
 
 Once all your pipelines are exported you can copy the desired files to the pipelines folder in the git project. The python script I mentioned here is by no means comprehensive, and you may find that there are lots of other things that you may want to extract as well, but if you are so inclined it’s a good way to get started for learning how to script with the ReST API.
 

@@ -45,7 +45,7 @@ Change into the cloud-sql-jdbc-socket-factory directory created in the previous 
 
 > **mvn -P jar-with-dependencies clean package -DskipTests**
 
-![](photo-2.gif)
+![](https://i.ibb.co/tcRb7SX/photo-2.gif)
 
 When the build completes you will find a new **_target_** sub folder created within each of the module directories. Within these target directories locate the files named:
 

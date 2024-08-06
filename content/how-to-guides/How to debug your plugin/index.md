@@ -39,7 +39,7 @@ At this point we won’t be making any changes to the source code. We just want 
 
 > mvn clean package
 
-![](photo-4.gif)
+![](https://i.ibb.co/HgMWK22/photo-4.gif)
 
 Once the build finishes you will find the plugin artifacts in the resulting target directory as illustrated.
 

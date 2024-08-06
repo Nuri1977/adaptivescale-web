@@ -83,7 +83,7 @@ We turn that data into a directive:
 
 As you can see this directive uses the ternary conditional operator and performs 5 evaluations. Because these evaluations take place in a single directive they perform much faster than if separate directive would be called five times per record in the dataset.
 
-![](gif-1.gif)
+![](https://i.ibb.co/Cn9XSzt/gif-1.gif)
 
 Conclusion
 ----------
