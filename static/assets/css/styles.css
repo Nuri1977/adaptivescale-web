@@ -185,6 +185,29 @@ h6 {
   background-color: var(--body-color);
 }
 
+.ud-outline-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 8px 25px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  background: var(--white);
+}
+
+.ud-outline-btn:hover {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
 @media (max-width: 767px) {
   .container {
     padding-left: 40px;
@@ -1183,6 +1206,44 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   color: #636262;
 }
 
+/* Price Cards CSS  */
+
+.price-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.s-price-card {
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.034), 0 6px 20px 0 rgba(0, 0, 0, 0.062);
+  transition: all .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.included-items {
+  text-align: start;
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+}
+
+.svg-pricing {
+  min-width: 18px;
+  margin-top: 3px;
+}
 
 /* Footer CSS  */
 
@@ -1562,4 +1623,6 @@ list-style: none;
   font-size: 15px;
   right: 15px;
 }
+
+
 
