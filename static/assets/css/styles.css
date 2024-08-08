@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
   color: var(--heading-color);
   margin: 0px;
 }
@@ -153,9 +153,8 @@ h6 {
   color:white;
 }
 .ud-second-btn:hover {
-  color: var(--primary-color);
-  background: #F3F4FE;
-  border: 1px solid var(--primary-color);
+  opacity: 0.9;
+  color: var(--white);
 }
 
 .ud-nav-btn {
@@ -1181,7 +1180,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   justify-content: center;
   align-items: center;
   transition: all .3s ease-in-out;
-  background-color: #F3F4FE;
 }
 .ui-card-sl:hover {
   margin-top: 5px;
@@ -1195,14 +1193,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .ui-card-heading {
   font-size: 17px;
-  font-weight: bold;
-  background: #F3F4FE;
-  padding: 10px 15px;
+  font-weight: 600;
 }
 
 .ui-card-text {
   padding: 10px 15px;
-  background: #F3F4FE;
   font-size: 15px;
   color: #636262;
 }
