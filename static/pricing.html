@@ -33,6 +33,7 @@
   <link rel="shortcut icon" href="assets/images/logo.svg" type="image/png" />
 
   <!-- ===== All CSS files ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -48,9 +49,9 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html">
-              <img src="assets/images/logo/adaptivescale1.svg" alt="Logo" />
+              <img src="assets/images/logo/adaptivescale1.svg" alt="Logo"/>
             </a>
-            <button class="navbar-toggler ">
+            <button title="navbar" class="navbar-toggler">
               <span class="toggler-icon"> </span>
               <span class="toggler-icon"> </span>
               <span class="toggler-icon"> </span>
@@ -61,7 +62,6 @@
                 <li class="nav-item">
                   <a href="services.html">Services</a>
                </li>
-
                 <li class="nav-item dropdown" id="productsDropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Products
@@ -88,7 +88,7 @@
                   <a href="our_work.html">Our Work</a>
                 </li>
               </ul>
-              <a href="index.html#contact" class="ud-menu-scroll ud-nav-btn py-2 px-3">Contact Us</a>
+              <a href="#contact" class="ud-menu-scroll ud-nav-btn py-2 px-3">Contact Us</a>
             </div>
 
           </nav>
@@ -98,274 +98,304 @@
   </header>
   <!-- ====== Header End ====== -->
 
-
-  <!-- ====== Hero Start ====== -->
-  <section class="ud-hero pb-2" id="home" style="min-height: 100vh;">
-    <div class="container py-md-5">
-      <div class="row align-items-center mt-md-5">
-        <div class="col-12 col-md-12 col-lg-6 col-xl-5 mb-3">
-          <h1 class="mb-2">Manage your CDAP artifacts with ease</h1>
-          <p class="lead mb-3">AdaptiveScale Hub is your central resource for managing CDAP plugins and pipelines.</p>
-           <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Sign up</a>
-        </div>
-        <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0" >
-          <img alt="image" src="./assets/images/di-cloud/manage-pipelines-01.png">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ====== Hero End ====== -->
-
-
-
-  <!-- ====== Manage your pipelines Start ====== -->
-
-  <!-- <section class="pt-5 text-center pipelines">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <div class="col-12 ml-auto ">
-          <h3>Manage your pipelines across CDAP and Cloud Data Fusion instances</h3>
-          <p class="lead">Seamlessly Publish any Pipleline, Anywhere. <br> Deploy pipelines across private and public
-            cloud.</p>
-          <img alt="image" class="img-fluid rounded-0" src="assets/images/di-cloud/manage-pipelines.png">
-
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ====== Manage your pipelines  End ====== -->
-
-  <!-- ====== Cards Start ====== -->
-
-  <section class="ud-cards our-work-cards py-5 " id="cards">
-
-    <div class="container my-5">
-      <div class="text-center my-5" style="max-width: 600px; margin: 0 auto;">
-        <h2 class="mb-2">
-          AdaptiveScale DI Cloud is the world's exclusive plugin marketplace for CDAP and Cloud Data Fusion
-        </h2>
-        <p class="lead">Browse plugins from software vendors, open-source projects, and the community.</p>
-      </div>
-
-      <div class="container">
-
-        <div class="row text-center justify-content-center mt-5">
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/gcp.png">
-              <div class="ui-card-heading mt-3">
-                <p>GCP Plugins</p>
-              </div>
+  <!-- ====== Price-cards Start ====== -->
+  <section class="pt-5">
+    <div class="pt-4 container">
+      <h1 class="text-center mb-2 pt-5">Chose a Plan</h1>
+      <h6 class="text-center lead">AdaptiveScale Data Integration Cloud pricing plans</h6>
+      <div class="price-cards">
+        <div class="s-price-card">
+          <div>
+            <div class="text-center mb-2">
+              <img alt="image" src="./assets/images/pricing/icons8-hard-working-96.png" height="42px">
+            </div>
+            <h5 class="text-center mb-2" style="opacity: 0.8;">Developer</h5>
+            <h3 class="text-center mb-4" style="opacity: 0.8;">$0<span style="font-size: 12px;">/month</span></h3>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Unlimited OSS plugins
+            </div>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Must include a GitHub repo
             </div>
           </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/elastic.png">
-              <div class="ui-card-heading mt-3">
-                <p>Elastic Search</p>
-              </div>
-            </div>
+          <div class="text-center">
+            <a class="ud-outline-btn" href="https://cloud.adaptivescale.com/register" target="_blank">Start Now</a>
           </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/spark.png">
-              <div class="ui-card-heading mt-3">
-                <p>Fast Filter Transofrm</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon.png">
-              <div class="ui-card-heading mt-3">
-                <p>proEDMS Plugins</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-1.png">
-              <div class="ui-card-heading mt-3">
-                <p>MultiFieldAdder</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-2.png">
-              <div class="ui-card-heading mt-3">
-                <p>Azure Blob Store Plugin</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-3.png">
-              <div class="ui-card-heading mt-3">
-
-                <p>Amazon S3Client Action</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-4.png">
-              <div class="ui-card-heading mt-3">
-                <p>Azure Datalake Store</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex text-center pt-4">
-          <a class="ud-outline-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Explore</a>
-          <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Learn more</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== Cards End ====== -->
-
-    <!-- ====== Data Fusion ====== -->
-    <section class="ud-hero py-4">
-      <div class="container py-4">
-        <div class="row align-items-center mt-md-5">
-          <div class="col-12 col-md-12 col-lg-6 col-xl-5 mb-3">
-            <img alt="image" src="./assets/images/di-cloud/manage-cdap.png">
-          </div>
-          <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0" >
-            <h1 class="mb-2">Manage your pipelines across CDAP and Cloud Data Fusion instances</h1>
-            <p class="lead mb-3">Seamlessly Publish any Pipleline, Anywhere.
-              Deploy pipelines across private and public cloud.</p>
-             <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Data Fusion End ====== -->
-
-  <!-- ====== DevOps Start ====== -->
-
-  <section class="py-5">
-    <div class="container py-5">
-      <div class="row text-center">
-        <div class="col-12">
-          <h1>DevOps Ready</h1>
-        </div>
-      </div>
-      <div class="row text-center justify-content-center mt-5 align-items-top ">
-        <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
-          <img alt="image" class="w-50" src="assets/images/di-cloud/layers.svg">
-          <h3><strong>Publish any Pipeline, Anywhere</strong></h3>
-          <p>Deploy pipelines across private and public cloud.</p>
-        </div>
-
-        <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
-          <img alt="image" class="w-50" src="assets/images/di-cloud/github.svg">
-          <h3><strong>Version control with Git</strong></h3>
-          <p>Use Git for managing pipeline versioning.</p>
-        </div>
-
-        <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
-          <img alt="image" class="w-50" src="assets/images/di-cloud/cloud.svg">
-          <h3><strong>Deploy and Run Pipelines</strong></h3>
-          <p>Centrally manage deployment and execution of pipelines.</p>
-        </div>
-      </div>
-      <div class="flex text-center pt-4">
-        <a class="ud-outline-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Learn more</a>
-      </div>
-    </div>
-  </section>
   
-<!-- ====== DevOps End ====== -->
-
-<!-- ====== Certified Plugins ====== -->
-<section class="ud-hero py-4">
-  <div class="container py-4">
-    <div class="row align-items-center mt-md-5">
-      <div class="col-12 col-md-12 col-lg-6 col-xl-5 mb-3">
-        <img alt="image" src="./assets/images/di-cloud/cdap-certified-plugins.svg">
-      </div>
-      <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0" >
-        <h1 class="mb-2">CDAP certified plugins - Trusted and supported</h1>
-        <div class="included-items">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
-            <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
-          </svg>
-          <span style="font-size: 18px;">Open Source Plugins certified by Google.</span>
         </div>
-        <div class="included-items">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
-            <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
-          </svg>
-          <span style="font-size: 18px;">Commercial Plugins supported by ISV-s.</span>
+        <div class="s-price-card">
+          <div>
+            <div class="text-center mb-2">
+              <img alt="image" src="./assets/images/pricing/icons8-coworking-96.png" height="42px">
+            </div>
+            <h5 class="text-center mb-2" style="opacity: 0.8;">Team</h5>
+            <h3 class="text-center mb-4" style="opacity: 0.8;">$49<span style="font-size: 12px;">/month</span></h3>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Unlimited OSS plugins
+            </div>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Allows 10 private plugins to be downloaded
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Can only be used by a single CDAP instance sandbox instance (single IP / dinamic)
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Plugins can be shared publicly and may contain closed source artifacts and commercial license
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="ud-outline-btn" href="https://cloud.adaptivescale.com/register" target="_blank">Start Now</a>
+          </div>
+  
         </div>
-        <div class="included-items mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
-            <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
-          </svg>
-          <span style="font-size: 18px;">Private repos managed by You</span>
+        <div class="s-price-card">
+          <div>
+            <div class="text-center mb-2">
+              <img alt="image" src="./assets/images/pricing/icons8-briefcase-96.png" height="42px">
+            </div>
+            <h5 class="text-center mb-2" style="opacity: 0.8;">Business</h5>
+            <h3 class="text-center mb-4" style="opacity: 0.8;">$199<span style="font-size: 12px;">/month</span></h3>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Unlimited OSS plugins
+            </div>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Allows 50 private plugins to be downloaded
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Can only be used by 3 CDAP sandbox instances
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Plugins can be shared publicly and may contain closed source artifacts and commercial license
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="ud-outline-btn" href="https://cloud.adaptivescale.com/register" target="_blank">Start Now</a>
+          </div>
+  
         </div>
-          <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Learn More</a>
+        <div class="s-price-card">
+          <div>
+            <div class="text-center mb-2">
+              <img alt="image" src="./assets/images/pricing/icons8-organization-96.png" height="42px">
+            </div>
+            <h5 class="text-center mb-2" style="opacity: 0.8;">Enterprise Basic</h5>
+            <h3 class="text-center mb-4" style="opacity: 0.8;">$499<span style="font-size: 12px;">/month</span></h3>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Unlimited OSS plugins
+            </div>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Allows unlimited private plugins to be uploaded.
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Can be used by 3 CDAP sandbox instances.
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              The plugins can be shared publicly and may contain clossed source artisfacts and a commercial license.
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="ud-outline-btn" href="https://cloud.adaptivescale.com/register" target="_blank">Start Now</a>
+          </div>
+  
+        </div>
+        <div class="s-price-card">
+          <div>
+            <div class="text-center mb-2">
+              <img alt="image" src="./assets/images/pricing/icons8-group-of-companies-96.png" height="42px">
+            </div>
+            <h5 class="text-center mb-2" style="opacity: 0.8;">Enterprise Plus</h5>
+            <p class="text-center mb-4 py-1" style="opacity: 0.8;">Contact sales for quote<span style="font-size: 12px;"></span></p>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Unlimited OSS plugins
+            </div>
+            <div class="included-items">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+              </svg>
+              Allows private plugins
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Can be used by unlimited CDAP sandbox instances
+            </div>
+            <div class="included-items">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
+                  <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+                </svg>
+              </div>
+              Pipelines Feature (Managing pipelines across multiple instances. Transfer from one instance to anothe with batch operations or singleton. Including plugin deployment that are relevat to their pipelines. Also start, delete, export pipelines in batch operations.)
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="ud-outline-btn" href="index.html#contact">Get a Quote</a>
+          </div>
+  
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- ====== Certified Plugins End ====== -->
 
-  <!-- ====== Final Cards Start ====== -->
-
-  <section class="ud-cards our-work-cards py-5 " id="cards">
-
-    <div class="container my-5">
-      <div class="text-center my-5" style="max-width: 600px; margin: 0 auto;">
-        <h1 class="mb-2">
-          Get Started
-        </h1>
-      </div>
-
-      <div class="container">
-
-        <div class="row text-center justify-content-center mt-5">
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl">
-              <div class="ui-card-heading py-3">
-                <p>Download</p>
-              </div>
-              <img alt="image" class="w-60 h-50" src="./assets/images/di-cloud/cdap-logo-orange.png" style="object-fit: contain;">
-              <a class="ud-outline-btn py-2 px-3 mt-5 mb-3" href="https://cloud.adaptivescale.com/register">Download</a>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl">
-              <div class="ui-card-heading py-3">
-                <p>Documentation</p>
-              </div>
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/data-hub.svg">
-              <a class="ud-outline-btn py-2 px-3 mt-5 mb-3" href="https://cloud.adaptivescale.com/register">Learn</a>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl">
-              <div class="ui-card-heading py-3">
-                <p>Hub</p>
-              </div>
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/adaptivescale-logo.png">
-              <a class="ud-outline-btn py-2 px-3 mt-5 mb-3" href="https://cloud.adaptivescale.com/register">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex text-center pt-4">
-          <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Get Started</a>
-        </div>
-      </div>
-    </div>
   </section>
+  <!-- ====== Price-cards End ====== -->
 
-  <!-- ====== Final Cards End ====== -->
+    <!-- ====== Price-teble Start ====== -->
+    <section class="pt-5">
+      <div class="pt-4 container">
+        <h1 class="text-center mb-2 py-5">Pricing Details</h1>
+        <div class="pricing-table-wraper">
+          <table class="pricing-table">
+            <thead class="thead">
+              <tr class="table-row">
+                <th>Features</th>
+                <th>Developer</th>
+                <th>Team</th>
+                <th>Business</th>
+                <th>Enterprise Basic</th>
+                <th>Enterprise Plus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Unlimited OSS plugins
+                </td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>
+                  Store artifacts centrally and securely
+                </td>
+                <td>X</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+                <td>
+                  Limited number of private plugins
+                </td>
+                <td>X</td>
+                <td>10</td>
+                <td>50</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>
+                  Plugins can be shared publicly and may contain closed source artifacts and commercial license
+                </td>
+                <td>X</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>
+                  Limited number of CDAP sandbox instance's that can use our product
+                </td>
+                <td>X</td>
+                <td>1 (single IP / dynamic)</td>
+                <td>3 IP's</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>
+                  Pipelines Feature (Managing pipelines across multiple instances. Transfer from one instance to anothe with batch operations or singleton. Including plugin deployment that are relevat to their pipelines. Also start, delete, export pipelines in batch operations are avaliable.)
+                </td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>
+                  Must include a GitHub repo
+                </td>
+                <td>✓</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
+
+      </div>
+  
+    </section>
+    <!-- ====== Price-table End ====== -->
+
 
   <!-- ====== Footer Start ====== -->
   <div class="pg-footer">
@@ -453,8 +483,8 @@
               </path>
             </svg>
           </a>
-          <a class="footer-social-link youtube" href="/page/videos/" rel="noopener"
-            target="_blank">
+          <a class="footer-social-link youtube" href="/page/videos/"
+             rel="noopener" target="_blank">
             <span class="hidden-link-text">Youtube</span>
             <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
               <path class="footer-social-icon-path"
@@ -462,7 +492,7 @@
               </path>
             </svg>
           </a>
-          <a class="footer-social-link github" href="https://github.com/AdaptiveScale" target="_blank" rel="noopener">
+          <a class="footer-social-link github" href="https://github.com/AdaptiveScale" rel="noopener" target="_blank">
             <span class="hidden-link-text">Github</span>
             <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path class="footer-social-icon-path"
@@ -494,14 +524,19 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <script src="./assets/js/main.js"></script>
 
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/menu-scroll.js"></script>
+  <script src="assets/js/contact.js"></script>
 
 </body>
 
