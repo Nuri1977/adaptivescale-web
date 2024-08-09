@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AdaptiveScale</title>
+  <title>Plugins</title>
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="AdaptiveScale - Software company">
@@ -33,6 +33,7 @@
   <link rel="shortcut icon" href="assets/images/logo.svg" type="image/png" />
 
   <!-- ===== All CSS files ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -50,7 +51,7 @@
             <a class="navbar-brand" href="index.html">
               <img src="assets/images/logo/adaptivescale1.svg" alt="Logo" />
             </a>
-            <button class="navbar-toggler ">
+            <button title="navbar" class="navbar-toggler">
               <span class="toggler-icon"> </span>
               <span class="toggler-icon"> </span>
               <span class="toggler-icon"> </span>
@@ -61,7 +62,6 @@
                 <li class="nav-item">
                   <a href="services.html">Services</a>
                </li>
-
                 <li class="nav-item dropdown" id="productsDropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Products
@@ -88,7 +88,7 @@
                   <a href="our_work.html">Our Work</a>
                 </li>
               </ul>
-              <a href="index.html#contact" class="ud-menu-scroll ud-nav-btn py-2 px-3">Contact Us</a>
+              <a href="#contact" class="ud-menu-scroll ud-nav-btn py-2 px-3">Contact Us</a>
             </div>
 
           </nav>
@@ -98,254 +98,171 @@
   </header>
   <!-- ====== Header End ====== -->
 
-
   <!-- ====== Hero Start ====== -->
-  <section class="ud-hero pb-2" id="home" style="min-height: 100vh;">
-    <div class="container py-md-5">
-      <div class="row align-items-center mt-md-5">
-        <div class="col-12 col-md-12 col-lg-6 col-xl-5 mb-3">
-          <h1 class="mb-2">Manage your CDAP artifacts with ease</h1>
-          <p class="lead mb-3">AdaptiveScale Hub is your central resource for managing CDAP plugins and pipelines.</p>
-           <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register" target="_blank">Sign up</a>
+  <section class="ud-hero pb-2" style="min-height: 100vh;">
+    <div class="container py-5 mt-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+          <h1 class="mb-2">Multiple Instances, One Console
+          </h1>
+          <h5 class="mb-2">Take control of all of you CDAP and Cloud Data Fusion instances.</h5>
+          <p class="lead">Managing pipelines across multiple instances can be a daunting task. Manually deploying, migrating, validating, or testing pipelines across instances is a painstaking process and can be very time-consuming.</p>
+
         </div>
-        <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0" >
-          <img alt="image" src="./assets/images/di-cloud/manage-pipelines-01.png">
+        <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0">
+          <img alt="image" src="./assets/images/pipelines/pipeline.svg">
         </div>
       </div>
     </div>
   </section>
   <!-- ====== Hero End ====== -->
 
-  <!-- ====== Cards Start ====== -->
-
-  <section class="ud-cards our-work-cards py-5 " id="cards">
-
-    <div class="container my-5">
-      <div class="text-center my-5" style="max-width: 600px; margin: 0 auto;">
-        <h2 class="mb-2">
-          AdaptiveScale DI Cloud is the world's exclusive plugin marketplace for CDAP and Cloud Data Fusion
-        </h2>
-        <p class="lead">Browse plugins from software vendors, open-source projects, and the community.</p>
+  <!-- ====== AdaptiveScale Hub Start ====== -->
+  <section class="ud-hero pb-2" style="background-color: white">
+    <div class="container pb-5">
+      <div class="flex flex-col align-items-center pb-5" style="max-width: 800px; margin: 0 auto">
+          <h2 class="mb-2 text-center">AdaptiveScale Hub
+          </h2>
+          <p class="lead pb-4 text-center">Allows you to connect to multiple instances simultaneously, so that you can manage pipelines across instances regardless if they are in private or public clouds. Copying pipelines from one environment onto another, or from one namespace into another namespace on the same instance becomes effortless.</p>
+          <div class="text-center">
+            <img alt="image" src="./assets/images/pipelines/pipeline-transfer.svg" height="350px" >
+          </div>
+          
       </div>
+    </div>
+  </section>
+  <!-- ====== AdaptiveScale Hub End ====== -->
 
-      <div class="container">
+  <!-- ====== Features Start ====== -->
+  <section class="ud-hero pb-2">
+    <div class="container pb-5">
+      <div class="row align-items-center pb-5">
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+          <img alt="image" src="./assets/images/pipelines/features.svg">
 
-        <div class="row text-center justify-content-center mt-5">
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/gcp.png">
-              <div class="ui-card-heading mt-3">
-                <p>GCP Plugins</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/elastic.png">
-              <div class="ui-card-heading mt-3">
-                <p>Elastic Search</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/spark.png">
-              <div class="ui-card-heading mt-3">
-                <p>Fast Filter Transofrm</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon.png">
-              <div class="ui-card-heading mt-3">
-                <p>proEDMS Plugins</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-1.png">
-              <div class="ui-card-heading mt-3">
-                <p>MultiFieldAdder</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-2.png">
-              <div class="ui-card-heading mt-3">
-                <p>Azure Blob Store Plugin</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-3.png">
-              <div class="ui-card-heading mt-3">
-
-                <p>Amazon S3Client Action</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3 pt-5 pt-sm-0">
-            <div class="ui-card-sl p-4" style="height: 200px;">
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/icon-4.png">
-              <div class="ui-card-heading mt-3">
-                <p>Azure Datalake Store</p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="flex text-center pt-4">
-          <a class="ud-outline-btn py-2 px-3" href="https://cloud.adaptivescale.com" target="_blank">Explore</a>
-          <a class="ud-second-btn py-2 px-3" href="plugins.html">Learn more</a>
+        <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0">
+          <h2 class="mb-2">Features</h2>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Supports CDAP and Cloud Data Fusion.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Transfer pipelines between instances and namespaces.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Switch between namespaces.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Export all pipelines as a compressed archive.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Export individual pipelines in native JSON format.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Upload a single pipeline with auto-upgrade detection.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Batch upload multiple pipelines..</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Run a pipeline interactively.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Delete a single pipeline.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Multiselect and delete multiple pipelines.</span>
+          </div>
+          <div class="included-items">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing" style="margin-top: 6px;">
+              <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
+            </svg>
+            <span style="font-size: 18px;">Automatically publish pipelines in deployed or draft mode.</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- ====== Features End ====== -->
 
-  <!-- ====== Cards End ====== -->
+  <!-- ====== Devops Ready Start ====== -->
+  <section class="ud-hero pb-2" style="background-color: white">
+    <div class="container pb-5">
+      <div class="row align-items-center pb-5">
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+          <img alt="image" src="./assets/images/pipelines/upload-cdap.png">
+        </div>
+        <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0">
+          <h2 class="mb-2">DevOps Ready</h2>
+          <h5 class="mb-2">Publish any pipeline, anywhere.</h5>
+          <p class="lead">Leveraging Git for version control allows teams to work more efficiently, and now you can extend this practice to pipeline management as well.</p>
+          <p class="lead">You can export pipelines from any environment, inclusive of all namespaces, as a single compressed archive containing all pipelines for all namespaces, or export pipelines only for a given namespace, or individually as desired.</p>
+          <p class="lead">Exported artifacts are structured in a hierarchical fashion composed of folders matching the namespace name that containscontain the pipelines for that namespace. Use your standard Git tooling and practices to incorporate those artifacts into a repository and manage artifact promotion with CI/CD. So, no more excuses! Check your pipelines into Git and get started.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Devops Ready End ====== -->
 
-    <!-- ====== Data Fusion ====== -->
-    <section class="ud-hero py-4">
-      <div class="container py-4">
-        <div class="row align-items-center mt-md-5">
-          <div class="col-12 col-md-12 col-lg-6 col-xl-5 mb-3">
-            <img alt="image" src="./assets/images/di-cloud/manage-cdap.png">
+  <!-- ====== Uploading Pipelines Start ====== -->
+  <section class="ud-hero pb-2">
+    <div class="container pb-5">
+      <div class="flex flex-col align-items-center pb-5" style="max-width: 800px; margin: 0 auto">
+          <h2 class="mb-2 text-center">Uploading Pipelines
+          </h2>
+          <p class="lead pb-4 text-center">Uploading pipelines to any environment is just as easy. You can upload artifacts of an entire environment, by namespace, or individual pipelines. Auto-upgrade detection is also included. Incorporating a Git workflow into your CDAP and Cloud Data Fusion ecosystem will allow you to automate much of the manual and mundane tasks so you can focus on building great applications.</p>
+          <div class="text-center">
+            <img alt="image" src="./assets/images/pipelines/github-cdap-gcp.png" >
           </div>
-          <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0" >
-            <h1 class="mb-2">Manage your pipelines across CDAP and Cloud Data Fusion instances</h1>
-            <p class="lead mb-3">Seamlessly Publish any Pipleline, Anywhere.
-              Deploy pipelines across private and public cloud.</p>
-             <a class="ud-second-btn py-2 px-3" href="pipelines.html">Learn More</a>
-          </div>
+          
+      </div>
+    </div>
+  </section>
+  <!-- ====== Uploading Pipelines End ====== -->
+
+    <!-- ====== Data coverage and lineage Start ====== -->
+    <section class="ud-hero pb-2" style="background-color: white;">
+      <div class="container pb-5">
+        <div class="flex flex-col align-items-center pb-5">
+            <h2 class="mb-2 ">Data Governance & Lineage
+            </h2>
+            <p class="lead">CDAP and Cloud Data Fusion provide a solid foundation for data governance and lineage for data processed through the platform. Leveraging the platform’s underlying metadata opens many new possibilities for data governance at scale</p>
+            <p class="lead mb-3">Go beyond data integration by incorporating Data Governance and Data Cataloging & Tagging for relational database systems. AdaptiveScale allows you to unify your private and public cloud operations with enhanced controls for data governance and lineage. Easily find the data you need regardless if it resides on-prem in an RDBMS or on a data warehouse in the cloud. Apply processing rules based on tags for securely handling sensitive and PII data.</p>
+            <a class="ud-second-btn py-2 px-3" href="index.html" >Learn more</a>
         </div>
       </div>
     </section>
-    <!-- ====== Data Fusion End ====== -->
-
-  <!-- ====== DevOps Start ====== -->
-
-  <section class="py-5">
-    <div class="container py-5">
-      <div class="row text-center">
-        <div class="col-12">
-          <h1>DevOps Ready</h1>
-        </div>
-      </div>
-      <div class="row text-center justify-content-center mt-5 align-items-top ">
-        <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
-          <img alt="image" class="w-50" src="assets/images/di-cloud/layers.svg">
-          <h3><strong>Publish any Pipeline, Anywhere</strong></h3>
-          <p>Deploy pipelines across private and public cloud.</p>
-        </div>
-
-        <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
-          <img alt="image" class="w-50" src="assets/images/di-cloud/github.svg">
-          <h3><strong>Version control with Git</strong></h3>
-          <p>Use Git for managing pipeline versioning.</p>
-        </div>
-
-        <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
-          <img alt="image" class="w-50" src="assets/images/di-cloud/cloud.svg">
-          <h3><strong>Deploy and Run Pipelines</strong></h3>
-          <p>Centrally manage deployment and execution of pipelines.</p>
-        </div>
-      </div>
-      <div class="flex text-center pt-4">
-        <a class="ud-outline-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Learn more</a>
-      </div>
-    </div>
-  </section>
-  
-<!-- ====== DevOps End ====== -->
-
-<!-- ====== Certified Plugins ====== -->
-<section class="ud-hero py-4">
-  <div class="container py-4">
-    <div class="row align-items-center mt-md-5">
-      <div class="col-12 col-md-12 col-lg-6 col-xl-5 mb-3">
-        <img alt="image" src="./assets/images/di-cloud/cdap-certified-plugins.svg">
-      </div>
-      <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-lg-0" >
-        <h1 class="mb-2">CDAP certified plugins - Trusted and supported</h1>
-        <div class="included-items">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
-            <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
-          </svg>
-          <span style="font-size: 18px;">Open Source Plugins certified by Google.</span>
-        </div>
-        <div class="included-items">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
-            <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
-          </svg>
-          <span style="font-size: 18px;">Commercial Plugins supported by ISV-s.</span>
-        </div>
-        <div class="included-items mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#007BFF" class="svg-pricing">
-            <path d="M20.285 4.715a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-5-5a1 1 0 1 1 1.414-1.414L10 13.586l9.285-9.285a1 1 0 0 1 1.414 0z"/>
-          </svg>
-          <span style="font-size: 18px;">Private repos managed by You</span>
-        </div>
-          <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ====== Certified Plugins End ====== -->
-
-  <!-- ====== Final Cards Start ====== -->
-
-  <section class="ud-cards our-work-cards py-5 " id="cards">
-
-    <div class="container my-5">
-      <div class="text-center my-5" style="max-width: 600px; margin: 0 auto;">
-        <h1 class="mb-2">
-          Get Started
-        </h1>
-      </div>
-
-      <div class="container">
-
-        <div class="row text-center justify-content-center mt-5">
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl">
-              <div class="ui-card-heading py-3">
-                <p>Download</p>
-              </div>
-              <img alt="image" class="w-60 h-50" src="./assets/images/di-cloud/cdap-logo-orange.png" style="object-fit: contain;">
-              <a class="ud-outline-btn py-2 px-3 mt-5 mb-3" href="https://cloud.adaptivescale.com/register">Download</a>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl">
-              <div class="ui-card-heading py-3">
-                <p>Documentation</p>
-              </div>
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/data-hub.svg">
-              <a class="ud-outline-btn py-2 px-3 mt-5 mb-3" href="https://cloud.adaptivescale.com/register">Learn</a>
-            </div>
-          </div>
-          <div class="col-10 col-sm-3">
-            <div class="ui-card-sl">
-              <div class="ui-card-heading py-3">
-                <p>Hub</p>
-              </div>
-              <img alt="image" class="w-50" src="./assets/images/di-cloud/adaptivescale-logo.png">
-              <a class="ud-outline-btn py-2 px-3 mt-5 mb-3" href="https://cloud.adaptivescale.com/register">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex text-center pt-4">
-          <a class="ud-second-btn py-2 px-3" href="https://cloud.adaptivescale.com/register">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== Final Cards End ====== -->
+    <!-- ====== Data coverage and lineage Start ====== -->
 
   <!-- ====== Footer Start ====== -->
   <div class="pg-footer">
@@ -433,8 +350,8 @@
               </path>
             </svg>
           </a>
-          <a class="footer-social-link youtube" href="/page/videos/" rel="noopener"
-            target="_blank">
+          <a class="footer-social-link youtube" href="/page/videos/"
+             rel="noopener" target="_blank">
             <span class="hidden-link-text">Youtube</span>
             <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
               <path class="footer-social-icon-path"
@@ -442,7 +359,7 @@
               </path>
             </svg>
           </a>
-          <a class="footer-social-link github" href="https://github.com/AdaptiveScale" target="_blank" rel="noopener">
+          <a class="footer-social-link github" href="https://github.com/AdaptiveScale" rel="noopener" target="_blank">
             <span class="hidden-link-text">Github</span>
             <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path class="footer-social-icon-path"
@@ -474,14 +391,19 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <script src="./assets/js/main.js"></script>
 
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/menu-scroll.js"></script>
+  <script src="assets/js/contact.js"></script>
 
 </body>
 
