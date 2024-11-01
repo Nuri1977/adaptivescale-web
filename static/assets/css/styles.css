@@ -1206,14 +1206,14 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
+  gap: 16px;
   margin: 50px 0;
 }
 
 .s-price-card {
-  width: 300px;
+  width: 260px;
   background-color: white;
   border-radius: 10px;
-  margin: 20px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.034), 0 6px 20px 0 rgba(0, 0, 0, 0.062);
   transition: all .3s ease-in-out;
@@ -1222,6 +1222,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   justify-content: space-between;
   gap: 24px;
   align-items: center;
+}
+
+.s-price-card:hover {
+  transform: scale(1.02);
 }
 
 .included-items {
